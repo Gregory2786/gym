@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Taurus Gym Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dsenvolvedores
+- João Paulo Souza
+- Gregory Almeida
+- Everton Souza
 
-## Available Scripts
+## Descrição
+A aplicação foi desenvolvida com o objetivo de proporcionar aos usuários uma experiência completa de treinamento físico, oferecendo um conjunto abrangente de exercícios cuidadosamente selecionados e organizados por grupamentos musculares. Os principais grupamentos musculares, como peito, perna, costas, braço, abdômen e ombro, estão representados, garantindo que os usuários possam focar em áreas específicas do corpo ou realizar treinos completos. Cada grupo muscular possui uma variedade de exercícios disponíveis, permitindo aos usuários diversificar seus treinos e adaptá-los de acordo com suas necessidades e objetivos individuais.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas no Front-End
+- React
+- Axios
 
-### `npm start`
+## Dificuldades Enfrentadas no Front-End
+Durante o processo de desenvolvimento do Front-End, enfrentamos diversos desafios significativos, especialmente ao integrar nossa aplicação com a API. No entanto, por meio de um esforço contínuo, muito estudo e dedicação, conseguimos superar esses obstáculos. Essa experiência não apenas nos permitiu aprimorar nossas habilidades técnicas, mas também nos mostrou a importância da perseverança e da colaboração em equipe. O resultado final é um produto funcional, pronto para oferecer uma experiência excepcional aos usuários.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Instalação
+Para inicializar o Front-End, faça o clone do repositório e no terminal identifique qual arquivo, identificado pelo último nome,  está acessando via terminal, caso seja o  **gym**
+será necessário seguir os seguintes passos: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+01. Acesse o arquivo **taurusgym** pelo terminal usando o seguinte comando: 
+```
+cd taurusgym
+``` 
 
-### `npm test`
+02. Instale o gerenciador de arquivos **NPM** usando o seguinte comando:
+```
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+03. E para que a inicialização da aplicação inicie usando o seguinte comando:
+```
+npm strat
+```
 
-### `npm run build`
+## Fontes
+- [Documentação React](https://legacy.reactjs.org/docs/getting-started.html)
+- [Documentação CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Documentação Axios](https://axios-http.com/docs/intro)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Além das fontes de estudo, é fundamental destacar o valioso apoio da equipe, onde a colaboração mútua foi de extrema importância para o desenvolvimento bem-sucedido do projeto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Licença do Projeto Front-End
+Este projeto é disponibilizado sob a Licença Aberta, permitindo o uso, distribuição e modificação por qualquer pessoa, para qualquer propósito, comercial ou não.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
