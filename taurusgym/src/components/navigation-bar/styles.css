@@ -20,7 +20,7 @@
 }
 
 #logo{
-  width: 15%;
+  width: 17%;
   height:auto;
   padding: 0.7%;
 }
@@ -76,40 +76,53 @@ li:hover{
   border-bottom: 2px solid #000;
 }
 
+/* styles.css */
+
+.btn-hamburger {
+  display: none; /* esconde o botão do hambúrguer por padrão */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.btn-hamburger .hamburger-line {
+  width: 27px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
 @media screen and (max-width: 600px) {
-  .container{
-    width: 100%;
-    height: auto;
-  }
-
-  .container-logo{
-    width: 100%;
-    height: auto;
-  }
-  
   #logo{
-    width: 25%;
-    height:auto;
+    width: 30%;
   }
 
-  .options{
-    width: 100%;
-    height: auto;
+  .btn-hamburger {
+    display: block; /* exibe o botão do hambúrguer para telas menores que 600px */
+  }
+
+  .options {
+    position: relative; /* adiciona posição relativa ao container para posicionar o menu lateral */
   }
 
   .menu {
+    position: absolute; /* posiciona o menu lateral absolutamente em relação ao container */
+    top: 100%; /* alinha o topo do menu com o final do container */
+    left: 0;
     width: 100%;
-    height: auto;
+    background-color:rgb(197, 240, 8);
+    display: none; /* esconde o menu lateral por padrão */
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* garante que o menu lateral esteja acima do conteúdo */
   }
 
-  li{
-    margin-right: 3%;
-
+  .menu.show {
+    display: block; /* exibe o menu lateral quando o botão do hambúrguer é clicado */
   }
 
-  .btn-nav{
-    width: 100%;
-    height: auto;
+  .menu li:hover {
+    background-color: rgba(130, 130, 247, 0.2); /* Altere a cor conforme necessário */
   }
-  
 }
