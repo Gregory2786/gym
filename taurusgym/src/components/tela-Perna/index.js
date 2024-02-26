@@ -1,16 +1,21 @@
-import React, { useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import './styles.css';
 import {getFuncion} from '../../services/APIservices';
 
-function getFuncionPerna(musculo){
-
-  getFuncion(musculo) 
-    .then(data => console.log(data))
-    .catch(err => console.error(err));
-  
-}
-
 const TelaPerna = ({onPressCallback}) => {
+  const [dados, setDados] = useState(null);
+  useEffect(() => {
+    async function carregarDados() {
+      try {
+        const dadosRecebidos = await getFuncion('perna');
+        setDados(dadosRecebidos);
+      } catch (error) {
+        console.error('Erro ao carregar dados:', error);
+      }
+    }
+  
+    carregarDados();
+  }, []);
   return (
     <div>
       <button className='btn-voltar' title='VOLTAR' onClick={() => onPressCallback('')}>
@@ -20,10 +25,15 @@ const TelaPerna = ({onPressCallback}) => {
       <h1 className='titulo'>PERNA</h1>
 
       <div className='Exercicio-area'>
-        <div className='Exercicio' onLoad={getFuncionPerna('perna')}>
+        <div className='Exercicio'>
           
-          AQUI VAI FICAR O CONTEUDO
-
+        {dados && (
+        <ul>
+          {dados.map(exercises => (
+            <li key={exercises.muscle}>{exercises.name}<img scr={exercises.img_url}></img>{exercises.description}</li>
+          ))}
+        </ul>
+      )}
         </div>
       </div>
     </div>
