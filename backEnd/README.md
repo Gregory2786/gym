@@ -1,7 +1,7 @@
 ## Author
 [Everton Sousa, João Paulo Souza, Gregory Almeida]
 
-## Descrição e Objetivo do Projeto
+## Descrição e Objetivo
 Este sistema é uma interface de programação de aplicativos (API) desenvolvida para facilitar o controle de dados relacionados a exercícios e músculos. Com esta ferramenta, os usuários podem realizar operações como adicionar, modificar, remover e consultar informações sobre diferentes exercícios e músculos, tais como nome do músculo, nome, imagem e descrição do exercício.
 
 ## Tecnologias Utilizadas
@@ -224,8 +224,16 @@ Resposta:
 }
 ```
 
-## Créditos
+## Fonte
+- [Documentação Mongoose](https://mongoosejs.com/docs/guide.html)
+- [Video Aula](https://youtu.be/zaWFnHagbrM?si=l5rN66Lmo2yWmO7L)
+- [Repositório Biblioteca API](https://github.com/Evertonsousa3/Biblioteca_API)
+- [Documentação Node.js](https://nodejs.org/docs/latest/api/)
+- [Documentação NPM](https://docs.npmjs.com/)
+- [Documentação Express](https://expressjs.com/pt-br/)
+- [Documentação Render](https://docs.render.com/deploy-node-express-app)
+- [Documentação Nodemon](https://www.npmjs.com/package/nodemon)
 
-### https://mongoosejs.com/docs/guide.html
-### https://youtu.be/zaWFnHagbrM?si=l5rN66Lmo2yWmO7L
-### https://github.com/Evertonsousa3/Biblioteca_API
+
+
+

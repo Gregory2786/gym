@@ -5,8 +5,8 @@
 - Gregory Almeida
 - Everton Souza
 
-## Descrição
-A aplicação foi desenvolvida com o objetivo de proporcionar aos usuários uma experiência completa de treinamento físico, oferecendo um conjunto abrangente de exercícios cuidadosamente selecionados e organizados por grupamentos musculares. Os principais grupamentos musculares, como peito, perna, costas, braço, abdômen e ombro, estão representados, garantindo que os usuários possam focar em áreas específicas do corpo ou realizar treinos completos. Cada grupo muscular possui uma variedade de exercícios disponíveis, permitindo aos usuários diversificar seus treinos e adaptá-los de acordo com suas necessidades e objetivos individuais.
+## Descrição e Objetivo
+A aplicação foi desenvolvida com o objetivo de proporcionar aos usuários uma experiência completa de treinamento físico, oferecendo um conjunto abrangente de exercícios cuidadosamente selecionados e organizados por grupamentos musculares. Durante o desenvolvimento do Front-End, priorizamos aprimorar a experiência do usuário (UX) e a interface de usuário (UI), visando tornar a aplicação o mais confortável e intuitiva possível. Também nos empenhamos em manter a aplicação leve, evitando a criação excessiva de páginas e arquivos, para proporcionar uma experiência de navegação mais ágil e eficiente.
 
 ## Tecnologias Utilizadas no Front-End
 - React
@@ -31,13 +31,14 @@ npm install
 
 03. E para que a inicialização da aplicação inicie usando o seguinte comando:
 ```
-npm strat
+npm st
 ```
 
 ## Fontes
 - [Documentação React](https://legacy.reactjs.org/docs/getting-started.html)
 - [Documentação CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Documentação Axios](https://axios-http.com/docs/intro)
+- [Documentação NPM](https://docs.npmjs.com/)
 
 Além das fontes de estudo, é fundamental destacar o valioso apoio da equipe, onde a colaboração mútua foi de extrema importância para o desenvolvimento bem-sucedido do projeto.
 
