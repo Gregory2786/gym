@@ -5,6 +5,10 @@ const app = express()
 app.use(express.json())
 require("dotenv").config();
 
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Headers', 'http://localhost:3000');
+    next();
+});
 const Exercise = mongoose.model('Exercise', { 
     name: String,
     img_url: String,
