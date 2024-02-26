@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles.css';
 
 
@@ -9,9 +9,9 @@ const Footer = () => {
       <div className='container-footer'>
         <h4>CONTATOS</h4>
         <ul className='Icones-footer'>
-          <li className='icone'><a href="https://github.com/JoaoPauloSouzaSilva/Taurus-GYM" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li className='icone'><a href="https://mail.google.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
-          <li className='icone'><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li className='icone'><a href="https://github.com/JoaoPauloSouzaSilva/Taurus-GYM" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a></li>
+          <li className='icone'><a href="https://mail.google.com" target="_blank" rel="noreferrer"><i class="fas fa-envelope"></i></a></li>
+          <li className='icone'><a href="https://www.facebook.com" target="_blank" rel="noreferrer"><i class="fab fa-facebook"></i></a></li>
         </ul>
       </div>
 

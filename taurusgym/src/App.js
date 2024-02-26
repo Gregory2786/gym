@@ -25,13 +25,13 @@ function App() {
   };
 
   useEffect(() => {
-    setCapaMusculoVisibility( Key == '');
-    setOmbroVisibility( Key == 'OMBRO');
-    setPeitoVisibility( Key == 'PEITO');
-    setBracoVisibility( Key == 'BRACO');
-    setAbdomenVisibility( Key == 'ABDOMEN');
-    setCostasVisibility( Key == 'COSTAS');
-    setPernaVisibility( Key == 'PERNA');
+    setCapaMusculoVisibility( Key === '');
+    setOmbroVisibility( Key === 'OMBRO');
+    setPeitoVisibility( Key === 'PEITO');
+    setBracoVisibility( Key === 'BRACO');
+    setAbdomenVisibility( Key === 'ABDOMEN');
+    setCostasVisibility( Key === 'COSTAS');
+    setPernaVisibility( Key === 'PERNA');
   }, [Key]);
 
   return (

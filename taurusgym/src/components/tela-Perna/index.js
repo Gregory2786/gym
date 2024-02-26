@@ -30,7 +30,7 @@ const TelaPerna = ({onPressCallback}) => {
         {dados && (
         <ul>
           {dados.map(exercises => (
-            <li key={exercises.muscle}>{exercises.name}<img scr={exercises.img_url}></img>{exercises.description}</li>
+            <li key={exercises.muscle}>{exercises.name}<img scr={exercises.img_url} alt='Imagem Exercicio'></img>{exercises.description}</li>
           ))}
         </ul>
       )}
