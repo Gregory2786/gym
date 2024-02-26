@@ -1,11 +1,8 @@
-# Biblioteca_API
-# API de uma Biblioteca
-
 ## Author
 [Everton Sousa, João Paulo Souza, Gregory Almeida]
 
 ## Descrição e Objetivo do Projeto
-Este sistema é uma interface de programação de aplicativos (API) desenvolvida para facilitar o controle de dados relacionados a livros. Com esta ferramenta, os usuários podem realizar operações como adicionar, modificar, remover e consultar informações sobre diferentes livros, tais como título, descrição e autor.
+Este sistema é uma interface de programação de aplicativos (API) desenvolvida para facilitar o controle de dados relacionados a exercícios e músculos. Com esta ferramenta, os usuários podem realizar operações como adicionar, modificar, remover e consultar informações sobre diferentes exercícios e músculos, tais como nome do músculo, nome, imagem e descrição do exercício.
 
 ## Tecnologias Utilizadas
 - Node.js
