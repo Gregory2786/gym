@@ -1,5 +1,3 @@
-// NavigationBar.js
-
 import React, { useState } from 'react';
 import './styles.css';
 
@@ -8,7 +6,7 @@ const NavigationBar = ({ onPressCallback }) => {
 
   const handleOptionClick = (category) => {
     onPressCallback(category);
-    setShowMenu(false); // Fecha o menu após uma opção ser escolhida
+    setShowMenu(false); 
   };
 
   return (

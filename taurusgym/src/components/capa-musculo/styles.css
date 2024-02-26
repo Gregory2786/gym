@@ -3,13 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* permite que os itens da flexbox sejam quebrados em várias linhas */
+  flex-wrap: wrap; 
 }
 
 .btn-capa{
   width: 35%;
   height: 35vh;
-  margin: 3%;
+  margin: 2%;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border: none;
   display: flex;
@@ -24,11 +24,30 @@
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: transparent;
   letter-spacing: 3px;
-  background-color: rgba(249, 255, 220, 0.911);
-
+  background-color: rgb(243, 253, 190);
+  font-size: calc(10px + 3vw);
 }
 
 .btn-capa:hover{
   background-color: rgb(197, 240, 8);
   -webkit-text-fill-color: black;
 }
+
+@media screen and (max-width: 600px) {
+  .container-capa {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .btn-capa {
+    width: 90%; 
+    height: auto;
+    margin: 2% 0;
+    font-size: 200%; 
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 1px; 
+    -webkit-text-fill-color: black;
+    font-weight: 300;
+  }
+}
+
