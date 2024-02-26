@@ -23,20 +23,20 @@
   margin-right: 4%;
 }
 
-.titulo{
+.titulo-abs{
   justify-content: center;
   text-align: center;
   margin-top: 0px;
-  font-size: 400%;
+  font-size: 6vw; 
   font-weight: bolder;
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: black;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-fill-color: #00000000;
   letter-spacing: 3px;
   box-shadow: 0 4px 8px -5px #000;
 }
 
-.titulo:hover{
+.titulo-abs:hover{
   -webkit-text-fill-color: black;
 }
 
@@ -55,6 +55,12 @@
   margin-bottom: 2%;
   border-radius: 20px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-  
 
+}
+
+@media screen and (max-width: 600px) {
+  .titulo-abs {
+    font-size: 10vw; 
+    -webkit-text-fill-color: #000;
+  }
 }

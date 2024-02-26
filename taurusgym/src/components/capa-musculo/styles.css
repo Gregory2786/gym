@@ -40,8 +40,8 @@
   }
 
   .btn-capa {
-    width: 90%; 
-    height: auto;
+    width: 70%; 
+    height: 12vh;
     margin: 2% 0;
     font-size: 200%; 
     -webkit-text-stroke-width: 1px;

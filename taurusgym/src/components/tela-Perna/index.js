@@ -22,7 +22,7 @@ const TelaPerna = ({onPressCallback}) => {
         <img  className="img-voltar" src="https://cdn-icons-png.flaticon.com/128/507/507257.png" alt="voltar" /> 
         VOLTAR
       </button>
-      <h1 className='titulo'>PERNA</h1>
+      <h1 className='titulo-perna'>PERNA</h1>
 
       <div className='Exercicio-area'>
         <div className='Exercicio'>
@@ -30,7 +30,7 @@ const TelaPerna = ({onPressCallback}) => {
         {dados && (
         <ul>
           {dados.map(exercises => (
-            <li key={exercises.muscle}>{exercises.name}<img scr={exercises.img_url} alt='Imagem Exercicio'></img>{exercises.description}</li>
+            <li key={exercises.muscle}>{exercises.name}<img src={exercises.img_url} alt='Imagem Exercicio'></img>{exercises.description}</li>
           ))}
         </ul>
       )}
