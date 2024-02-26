@@ -27,12 +27,14 @@ const TelaPerna = ({onPressCallback}) => {
       <div className='Exercicio-area'>
         <div className='Exercicio'>
           
-        {dados && (
+        {dados && ( // Verifica se a variável 'dados' está definida e não é nula
+      
+        //Abre uma lista não ordenada
         <ul>
-          {dados.map(exercises => (
+          {dados.map(exercises => ( // Mapeia sobre cada item na matriz 'dados'; 'exercises' representa cada item individualmente
             <li key={exercises.muscle}>{exercises.name}<img src={exercises.img_url} alt='Imagem Exercicio'></img>{exercises.description}</li>
           ))}
-        </ul>
+        </ul>// Fecha a lista não ordenada
       )}
         </div>
       </div>
