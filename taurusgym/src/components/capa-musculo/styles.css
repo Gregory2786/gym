@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* permite que os itens da flexbox sejam quebrados em várias linhas */
+  flex-wrap: wrap; 
 }
 
 .btn-capa{
@@ -24,11 +24,30 @@
   -webkit-text-stroke-color: black;
   -webkit-text-fill-color: transparent;
   letter-spacing: 3px;
-  background-color: rgba(249, 255, 220, 0.911);
-
+  background-color: rgb(243, 253, 190);
+  font-size: calc(10px + 3vw);
 }
 
 .btn-capa:hover{
   background-color: rgb(197, 240, 8);
   -webkit-text-fill-color: black;
 }
+
+@media screen and (max-width: 600px) {
+  .container-capa {
+    flex-direction: column; /* Altera a direção da flexbox para coluna em telas menores que 600px */
+    align-items: center; /* Centraliza os itens na coluna */
+  }
+
+  .btn-capa {
+    width: 90%; /* Define a largura dos botões para ocupar 90% da largura da tela */
+    height: auto; /* Define a altura automática para ajustar ao conteúdo */
+    margin: 2% 0; /* Reduz a margem entre os botões */
+    font-size: 200%; /* Reduz o tamanho da fonte para uma melhor adaptação */
+    -webkit-text-stroke-width: 1px; /* Reduz a largura do contorno do texto */
+    letter-spacing: 1px; /* Reduz o espaçamento entre letras */
+    -webkit-text-fill-color: black;
+    font-weight: 300;
+  }
+}
+

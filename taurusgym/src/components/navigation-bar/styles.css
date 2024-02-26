@@ -76,10 +76,8 @@ li:hover{
   border-bottom: 2px solid #000;
 }
 
-/* styles.css */
-
 .btn-hamburger {
-  display: none; /* esconde o botão do hambúrguer por padrão */
+  display: none; 
   background: none;
   border: none;
   cursor: pointer;
@@ -99,30 +97,30 @@ li:hover{
   }
 
   .btn-hamburger {
-    display: block; /* exibe o botão do hambúrguer para telas menores que 600px */
+    display: block; 
   }
 
   .options {
-    position: relative; /* adiciona posição relativa ao container para posicionar o menu lateral */
+    position: relative; 
   }
 
   .menu {
-    position: absolute; /* posiciona o menu lateral absolutamente em relação ao container */
-    top: 100%; /* alinha o topo do menu com o final do container */
+    position: absolute; 
+    top: 100%; 
     left: 0;
     width: 100%;
     background-color:rgb(197, 240, 8);
-    display: none; /* esconde o menu lateral por padrão */
+    display: none; 
     padding: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    z-index: 1; /* garante que o menu lateral esteja acima do conteúdo */
+    z-index: 1; 
   }
 
   .menu.show {
-    display: block; /* exibe o menu lateral quando o botão do hambúrguer é clicado */
+    display: block; 
   }
 
   .menu li:hover {
-    background-color: rgba(130, 130, 247, 0.2); /* Altere a cor conforme necessário */
+    background-color: rgba(130, 130, 247, 0.2); 
   }
 }
