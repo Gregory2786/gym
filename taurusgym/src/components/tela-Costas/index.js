@@ -19,10 +19,10 @@ const TelaCostas = ({onPressCallback}) => {
   return (
     <div>
       <div id='divVoltar'>
-      <button className='btn-voltar' title='VOLTAR' onClick={() => onPressCallback('')}>
-        <img  className="img-voltar" src="https://cdn-icons-png.flaticon.com/128/507/507257.png" alt="voltar" /> 
-        VOLTAR
-      </button>
+        <button className='btn-voltar' title='VOLTAR' onClick={() => onPressCallback('')}>
+          <img  className="img-voltar" src="https://cdn-icons-png.flaticon.com/128/507/507257.png" alt="voltar" /> 
+          VOLTAR
+        </button>
       </div>
       <h1 className='titulo-costas'>COSTAS</h1>
 
