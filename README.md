@@ -1,32 +1,30 @@
 # Taurus gym
 
-## Dsenvolvedores
-- João Paulo Souza
-- Gregory Almeida
-- Everton Souza
+## :technologist: Dsenvolvedores
+- João Paulo Souza :octocat:
+- Gregory Almeida :octocat:
+- Everton Souza :octocat:
 
-## Descrição
+## :page_with_curl: Descrição
 A aplicação foi desenvolvida com o objetivo de proporcionar aos usuários uma experiência completa de treinamento físico, oferecendo um conjunto abrangente de exercícios cuidadosamente selecionados e organizados por grupamentos musculares. Os principais grupamentos musculares, como peito, perna, costas, braço, abdômen e ombro, estão representados, garantindo que os usuários possam focar em áreas específicas do corpo ou realizar treinos completos. Cada grupo muscular possui uma variedade de exercícios disponíveis, permitindo aos usuários diversificar seus treinos e adaptá-los de acordo com suas necessidades e objetivos individuais.
 
-## Público Alvo
+## :dart: Público Alvo
 A aplicação foi desenvolvida para atender a um público amplo, englobando tanto aqueles que praticam exercícios físicos como atletas e não atletas, quanto os profissionais da área. Independentemente de serem realizados na academia ou em outros locais, os exercícios foram cuidadosamente selecionados e organizados para atender às necessidades e expectativas de todos os praticantes.
 
-## Justificativa
+## :briefcase: Justificativa
 Após uma pesquisa sobre os sites existentes que indicam exercícios físicos, foi observado que a maioria deles apresenta apenas um conjunto limitado de exercícios, geralmente em formato de texto simples. Diante dessa constatação, surgiu a motivação para criar uma página web que ofereça um amplo e diversificado banco de exercícios, abrangendo diversos grupos musculares, e que seja de fácil acesso e navegação. O objetivo é proporcionar aos usuários uma experiência mais completa e eficiente, permitindo que encontrem facilmente os exercícios desejados e possam diversificar e aprimorar suas rotinas de treinamento de forma mais eficaz.
 
-# Front-End
+# :art: Front-End
 
-## Descrição e Objetivo
+## :clipboard: Descrição e Objetivo
 A aplicação foi desenvolvida com o objetivo de proporcionar aos usuários uma experiência completa de treinamento físico, oferecendo um conjunto abrangente de exercícios cuidadosamente selecionados e organizados por grupamentos musculares. Durante o desenvolvimento do Front-End, priorizamos aprimorar a experiência do usuário (UX) e a interface de usuário (UI), visando tornar a aplicação o mais confortável e intuitiva possível. Também nos empenhamos em manter a aplicação leve, evitando a criação excessiva de páginas e arquivos, para proporcionar uma experiência de navegação mais ágil e eficiente.
 
-## Tecnologias Utilizadas no Front-End
+## :floppy_disk: Tecnologias Utilizadas no Front-End
 - React
 - Axios
 
-## Dificuldades Enfrentadas no Front-End
-Durante o processo de desenvolvimento do Front-End, enfrentamos diversos desafios significativos, especialmente ao integrar nossa aplicação com a API. No entanto, por meio de um esforço contínuo, muito estudo e dedicação, conseguimos superar esses obstáculos. Essa experiência não apenas nos permitiu aprimorar nossas habilidades técnicas, mas também nos mostrou a importância da perseverança e da colaboração em equipe. O resultado final é um produto funcional, pronto para oferecer uma experiência excepcional aos usuários.
 
-## Instalação
+## 	:open_file_folder: Instalação
 Para inicializar o Front-End, faça o clone do repositório e no terminal identifique qual arquivo, identificado pelo último nome,  está acessando via terminal, caso seja o  **gym**
 será necessário seguir os seguintes passos: 
 
@@ -46,19 +44,19 @@ npm st
 ```
 # :hammer_and_wrench: Back-End
 
-## Descrição e Objetivo
+## :clipboard: Descrição e Objetivo
 Este sistema é uma interface de programação de aplicativos (API) desenvolvida para facilitar o controle de dados relacionados a exercícios e músculos. Com esta ferramenta, os usuários podem realizar operações como adicionar, modificar, remover e consultar informações sobre diferentes exercícios e músculos, tais como nome do músculo, nome, imagem e descrição do exercício.
 
-## Tecnologias Utilizadas
+## :floppy_disk: Tecnologias Utilizadas
 - Node.js
 - Express.js
 - MongoDB (com Mongoose)
 - Render
 - Nodemon
 
-## Endpoints
+## :game_die: Endpoints
 
-### [POST] /muscle
+### :round_pushpin: [POST] /muscle
 
 Descrição: Cadastra um novo músculo.
 
@@ -78,7 +76,7 @@ Resposta:
 }
 ```
 
-### [GET] /muscle
+### :round_pushpin: [GET] /muscle
 
 Descrição: Retorna todos os músculos cadastrados.
 
@@ -118,7 +116,7 @@ Resposta:
 ]
 ```
 
-### [PUT] /muscle/{:id}
+### :round_pushpin: [PUT] /muscle/{:id}
 
 Nome: Atualiza dados de um músculo de acordo com ID especificado.
 
@@ -139,7 +137,7 @@ Resposta:
 }
 ```
 
-### [DELETE] /muscle/{:id}
+### :round_pushpin: [DELETE] /muscle/{:id}
 
 Descrição: Exclui um músculo de acordo com ID especificado.
 
@@ -151,7 +149,7 @@ Resposta:
 	"__v": 0
 }
 ```
-### [POST] /exercise
+### :round_pushpin: [POST] /exercise
 
 Descrição: Cadastra um novo exercício.
 
@@ -177,7 +175,7 @@ Resposta:
 }
 ```
 
-### [GET] /exercise/{:muscle}
+### :round_pushpin: [GET] /exercise/{:muscle}
 
 Descrição: Retorna todos os exercícios de um determinado músculo já cadastrados. 
 
@@ -225,7 +223,7 @@ Resposta:
 ]
 ```
 
-### [PUT] /exercise/{:id}
+### :round_pushpin: [PUT] /exercise/{:id}
 
 Nome: Atualiza dados de um exercício de acordo com ID especificado.
 
@@ -254,7 +252,7 @@ Resposta:
 }
 ```
 
-### [DELETE] /exercise/{:id}
+### :round_pushpin: [DELETE] /exercise/{:id}
 
 Descrição: Exclui um exercício de acordo com ID especificado.
 
@@ -270,7 +268,7 @@ Resposta:
 ```
 
 
-## Fontes
+## :open_book: Fontes
 - [Documentação React](https://legacy.reactjs.org/docs/getting-started.html)
 - [Documentação CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Documentação Axios](https://axios-http.com/docs/intro)
@@ -285,5 +283,5 @@ Resposta:
 
 Além das fontes de estudo, é fundamental destacar o valioso apoio da equipe, onde a colaboração mútua foi de extrema importância para o desenvolvimento bem-sucedido do projeto.
 
-## Licença do Projeto Front-End
+## :unlock: Licença do Projeto Front-End
 Este projeto é disponibilizado sob a Licença Aberta, permitindo o uso, distribuição e modificação por qualquer pessoa, para qualquer propósito, comercial ou não.
