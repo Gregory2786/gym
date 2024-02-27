@@ -16,8 +16,8 @@ const Exercise = mongoose.model('Exercise', {
     name: String,
     img_url: String,
     description: String,
-    muscle: { type: mongoose.Schema.Types.ObjectId, ref: 'Muscle' } // Referência ao músculo
-
+    muscle: { type: mongoose.Schema.Types.ObjectId, ref: 'Muscle' }, // Referência ao músculo
+    maquina: { type: mongoose.Schema.Types.ObjectId, ref: 'Maquina' } // Referência à máquina
 });
 
 // GET exercises by muscle
@@ -41,30 +41,45 @@ app.delete("/exercise/:id", async (req, res) =>{
 })
 
 app.put("/exercise/:id", async(req, res) => {
-    const exercise = await Exercise.findByIdAndUpdate(req.params.id, {
-        name:req.body.name,
-        img_url: req.body.img_url,
-        description:req.body.description
-    },{
-        new:true
-    })
-    return res.send(exercise);
-})
+    try {
+        const { name, img_url, description, muscleId, maquinaId } = req.body;
+        const updatedExercise = await Exercise.findByIdAndUpdate(req.params.id, {
+            name,
+            img_url,
+            description,
+            muscle: muscleId,
+            maquina: maquinaId
+        }, { new: true });
+        return res.send(updatedExercise);
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+});
+
 
 app.post("/exercise", async (req, res) => {
     try {
-        const { name, img_url, description, muscleId } = req.body;
+        const { name, img_url, description, muscleId, maquinaId } = req.body;
+
         // Verifique se o músculo existe
         const muscleExists = await Muscle.findById(muscleId);
         if (!muscleExists) {
             return res.status(400).send("Músculo não encontrado");
         }
-        // Crie o novo exercício com a referência ao músculo
+
+        // Verifique se a máquina existe
+        const maquinaExists = await Maquina.findById(maquinaId);
+        if (!maquinaExists) {
+            return res.status(400).send("Máquina não encontrada");
+        }
+
+        // Crie o novo exercício com a referência ao músculo e à máquina
         const exercise = new Exercise ({
             name,
             img_url,
             description,
-            muscle: muscleId // Referenciar o músculo pelo _id
+            muscle: muscleId, // Referenciar o músculo pelo _id
+            maquina: maquinaId // Referenciar a máquina pelo _id
         });
         await exercise.save();
         return res.send(exercise);
@@ -72,6 +87,7 @@ app.post("/exercise", async (req, res) => {
         return res.status(500).send(error.message);
     }
 });
+
 
 //Muscle Entity
 const Muscle = mongoose.model('Muscle', {
@@ -103,6 +119,37 @@ app.post("/muscle", async (req, res) => {
     });
     await muscle.save();
     return res.send(muscle);
+});
+
+const Maquina = mongoose.model('Maquina', {
+    name: String,
+});
+
+app.get("/maquina", async (req, res) => {
+    const maquinas = await Maquina.find();
+    return res.send(maquinas);
+});
+  
+app.delete("/maquina/:id", async (req, res) =>{
+    const maquina = await Maquina.findByIdAndDelete(req.params.id);
+    return res.send(maquina);
+});
+
+app.put("/maquina/:id", async(req, res) => {
+    const maquina = await Maquina.findByIdAndUpdate(req.params.id, {
+        name: req.body.name,
+    },{
+        new: true
+    });
+    return res.send(maquina);
+});
+
+app.post("/maquina", async (req, res) => {
+    const maquina = new Maquina({
+        name: req.body.name,
+    });
+    await maquina.save();
+    return res.send(maquina);
 });
 
 require("./db")
