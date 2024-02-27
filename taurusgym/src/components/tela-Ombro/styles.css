@@ -67,3 +67,7 @@
 img{
   width: 100%;
 }
+#divVoltar{
+  position: absolute;
+  margin-top: 3%;
+}

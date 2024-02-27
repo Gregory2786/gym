@@ -17,15 +17,16 @@ const TelaOmbro = ({onPressCallback}) => {
     carregarDados();
   }, []);
   return (
-    <div>
-      <button className='btn-voltar' title='VOLTAR' onClick={() => onPressCallback('')}>
-        <img  className="img-voltar" src="https://cdn-icons-png.flaticon.com/128/507/507257.png" alt="voltar" /> 
-        VOLTAR
-      </button>
-      <h1 className='titulo-ombro'>OMBRO</h1>
-
-      <div className='Exercicio-area'>
-        <div className='Exercicio'>
+    <div id='divExercicios'>
+        <div id='divVoltar'>
+        <button className='btn-voltar' title='VOLTAR' onClick={() => onPressCallback('')}>
+          <img  className="img-voltar" src="https://cdn-icons-png.flaticon.com/128/507/507257.png" alt="voltar" /> 
+          VOLTAR
+        </button>
+         </div>
+         <h1 className='titulo-ombro'>OMBRO</h1> 
+         <div className='Exercicio-area'>
+         <div className='Exercicio'>
           
         {dados && (// Verifica se a variável 'dados' está definida e não é nula
       

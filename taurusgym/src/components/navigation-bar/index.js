@@ -16,7 +16,7 @@ const NavigationBar = ({ onPressCallback }) => {
         <img onClick={() => onPressCallback('')} id='logo' src="/logo01.png" alt="logo" />
       </div>
 
-      <div className='options'>
+      <div id='options' className='options'>
         <button className='btn-hamburger' onClick={() => setShowMenu(!showMenu)}>
           <div className='hamburger-line' />
           <div className='hamburger-line' />
