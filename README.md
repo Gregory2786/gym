@@ -1,6 +1,6 @@
 # Taurus gym
 
-## :technologist: Dsenvolvedores
+## :technologist: Desenvolvedores
 - João Paulo Souza :octocat:
 - Gregory Almeida :octocat:
 - Everton Souza :octocat:
